@@ -13,9 +13,9 @@ role :db,  "localhost", :primary => true
 
 set :scm, :git
 set :scm_command, "/opt/local/bin/git"
-set :stage, :staging
 
 task :staging do
+  set :stage, :staging
   set :deploy_to, "/u/apps/staging/#{application}"
 end
 
